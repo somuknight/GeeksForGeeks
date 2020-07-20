@@ -1,9 +1,9 @@
-/**
- * Shows a given number is prime number or not
- *
- * example:
- * 33
- * false
+/*
+  Shows a given number is prime number or not
+
+  example:
+  33
+  false
  */
 
 import java.util.Scanner;
