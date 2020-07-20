@@ -5,7 +5,7 @@
  * 33
  * false
  */
-// TODO: 20-Jul-20 add a mainCall method
+
 import java.util.Scanner;
 
 public class IsPrime {
