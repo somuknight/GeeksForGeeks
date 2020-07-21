@@ -30,6 +30,7 @@ public class Min_Insertion_to_Form_Palindrome {
         String str4="abcda";
         String str5="madam";
 
-        findMinInsertion(str3.toCharArray(),0,str3.length()-1);
+        int n=findMinInsertion(str2.toCharArray(),0,str2.length()-1);
+        System.out.println("min insertion is :"+n);
     }
 }
