@@ -15,7 +15,7 @@
 
 public class Min_Insertion_to_Form_Palindrome {
     static int findMinInsertion(char[] s,int l, int h){
-        if(l>h)return Integer.MAX_VALUE;
+        if(l>h)return Integer.MIN_VALUE;
         if(l==h)return 0;
         if (l==h-1)return (s[l]==s[h])?0:1;
 
@@ -30,7 +30,8 @@ public class Min_Insertion_to_Form_Palindrome {
         String str4="abcda";
         String str5="madam";
 
-        int n=findMinInsertion(str2.toCharArray(),0,str2.length()-1);
+        int n=findMinInsertion(str3.toCharArray(),0,str3.length()-1);
         System.out.println("min insertion is :"+n);
+
     }
 }
