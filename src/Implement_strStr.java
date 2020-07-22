@@ -38,7 +38,7 @@
 public class Implement_strStr {
     static  int strStr(String s1,String s2){
         int p=-1;
-        if(s1==null||s2==null)
+        if(s1==null||s2==null||s1.length()==0||s2.length()==0)
             return -1;
         if(s1.length()<s2.length())
             return -1;
@@ -71,6 +71,10 @@ class AnotherApproach{/*this approach uses String.substring() method*/
 
     static  int strStr2(String s1,String s2){
         int p=-1;
+        if(s1==null||s2==null||s1.length()==0||s2.length()==0)
+            return -1;
+        if(s1.length()<s2.length())
+            return -1;
         for (int i=0;i<=s1.length()-s2.length();i++){
             if(s2.equals(s1.substring(i,i+s2.length()))) {
                 p=i;
