@@ -65,6 +65,7 @@ public class Longest_Common_prefix {
     }
 
 }
+/*******************************just a test for"equals()" method**********************************************/
 class test{
     public static void main(String[] args) {
         String s1="asdfgh";
