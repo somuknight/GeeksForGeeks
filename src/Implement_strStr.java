@@ -67,3 +67,27 @@ public class Implement_strStr {
 
     }
 }
+class AnotherApproach{/*this approach uses String.substring() method*/
+
+    static  int strStr2(String s1,String s2){
+        int p=-1;
+        for (int i=0;i<=s1.length()-s2.length();i++){
+            if(s2.equals(s1.substring(i,i+s2.length()))) {
+                p=i;
+                break;
+            }
+
+        }
+        return p;
+    }
+    public static void main(String[] args) {
+        String str1="umaballlav";
+        String str2="ll";
+
+        int position=strStr2(str1,str2);
+        if(position>=0)
+            System.out.println(position);
+        else
+            System.out.println("not contained");
+    }
+}
