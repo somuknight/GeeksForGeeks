@@ -2,6 +2,12 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Longest_Distinct_characters_in_string {
+    static void mainCaller(){
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        if(s.charAt(0)==' ')
+            Longest_Distinct_characters_in_string.main(null);
+    }
     static int LDCS(String str){
         int res=0;
         int [] lastIndex=new int[26];
@@ -25,6 +31,8 @@ public class Longest_Distinct_characters_in_string {
             System.out.println(n);
         else
             System.out.println("invalid string");
+
+        mainCaller();
     }
 }
 class Test{
