@@ -33,7 +33,7 @@ Testcase 1: Max subarray sum is 9 of elements (1, 2, 3, -2, 5) which is a contig
 
 package Arrays;
 
-public class KadaneAlgorithm {
+public class KadanesAlgorithm {
     static int kadensAlgo(int[] arr){
         int max=Integer.MIN_VALUE;
         int temp_max=0;
