@@ -37,19 +37,17 @@ public class KadaneAlgorithm {
     static int kadensAlgo(int[] arr){
         int max=Integer.MIN_VALUE;
         int temp_max=0;
-        for (int i=0;i<arr.length;i++){
+        for (int value : arr) {
 
-            temp_max=temp_max+arr[i];
+            temp_max = temp_max + value;
 
-            if(max<=temp_max)
-                max=temp_max;
-            else
-                continue;
+            if (max <= temp_max)
+                max = temp_max;
         }
         return max;
     }
     public static void main(String[] args) {
-        int[] arr={1, 2, 3, -2, 5};
+        int[] arr={1, 2, 3, -2, 5};     //{-1 ,-2 ,-3 ,-4} another test case
         int res=kadensAlgo(arr);
 
         System.out.println(res);
