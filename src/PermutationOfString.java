@@ -1,14 +1,14 @@
-/** print all possible permutation of a string
- *
- * input:
- *      cat
- * output:
- *      cat
- *      cta
- *      act
- *      atc
- *      tca
- *      tac
+/* print all possible permutation of a string
+
+  input:
+       cat
+  output:
+       cat
+       cta
+       act
+       atc
+       tca
+       tac
  */
 
 import java.util.Scanner;

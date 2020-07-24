@@ -1,32 +1,32 @@
-/**
- * Given two strings, the task is to find if a string can be obtained by rotating another string two places.
- *
- * Examples:
- * Input: string1 = “amazon”, string2 = “azonam”
- * Output: Yes
- * // rotated anti-clockwise
- *
- * Input: string1 = “amazon”, string2 = “onamaz”
- * Output: Yes
- * // rotated clockwise
- *
- * 1- There can be only two cases:
- *     a) Clockwise rotated
- *     b) Anti-clockwise rotated
- *
- * 2- If clockwise rotated that means elements
- *    are shifted in right.
- *    So, check if a substring[2.... len-1] of
- *    string2 when concatenated with substring[0,1]
- *    of string2 is equal to string1. Then, return true.
- *
- * 3- Else, check if it is rotated anti-clockwise
- *    that means elements are shifted to left.
- *    So, check if concatenation of substring[len-2, len-1]
- *    with substring[0....len-3] makes it equals to
- *    string1. Then return true.
- *
- * 4- Else, return false.
+/*
+  Given two strings, the task is to find if a string can be obtained by rotating another string two places.
+
+  Examples:
+  Input: string1 = “amazon”, string2 = “azonam”
+  Output: Yes
+  // rotated anti-clockwise
+
+  Input: string1 = “amazon”, string2 = “onamaz”
+  Output: Yes
+  // rotated clockwise
+
+  1- There can be only two cases:
+      a) Clockwise rotated
+      b) Anti-clockwise rotated
+
+  2- If clockwise rotated that means elements
+     are shifted in right.
+     So, check if a substring[2.... len-1] of
+     string2 when concatenated with substring[0,1]
+     of string2 is equal to string1. Then, return true.
+
+  3- Else, check if it is rotated anti-clockwise
+     that means elements are shifted to left.
+     So, check if concatenation of substring[len-2, len-1]
+     with substring[0....len-3] makes it equals to
+     string1. Then return true.
+
+  4- Else, return false.
  */
 
 import java.util.Scanner;

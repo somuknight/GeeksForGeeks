@@ -1,24 +1,24 @@
-import java.util.Scanner;
+/*
+  Given a string, recursively remove adjacent duplicate characters from the string.
+  The output string should not have any adjacent duplicates. See following examples.
 
-/**
- * Given a string, recursively remove adjacent duplicate characters from the string.
- * The output string should not have any adjacent duplicates. See following examples.
- *
- * Examples:
- *
- * Input: azxxzy
- * Output: ay
- * First “azxxzy” is reduced to “azzy”.
- * The string “azzy” contains duplicates,
- * so it is further reduced to “ay”.
- *
- * Input: caaabbbaacdddd
- * Output: Empty String
- *
- * Input: acaaabbbacdddd
- * Output: acac
+  Examples:
+
+  Input: azxxzy
+  Output: ay
+  First “azxxzy” is reduced to “azzy”.
+  The string “azzy” contains duplicates,
+  so it is further reduced to “ay”.
+
+  Input: caaabbbaacdddd
+  Output: Empty String
+
+  Input: acaaabbbacdddd
+  Output: acac
  */
 
+
+import java.util.Scanner;
 public class Recursively_remove_all_adjacent_duplicates {
     static String removeUntil(String str,char last_removed){
         if(str.length()==0||str.length()==1){
