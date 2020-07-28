@@ -52,6 +52,9 @@ public class Rearrange_Array_Alternately {
         System.out.println(Arrays.toString(arr));
     }
 }
+/*************************************************************************************************/
+/***************************************Another Approach******************************************/
+/*************************************************************************************************/
 
 class AnotherApproach{
     public static void rearrange(int[] arr,int l){
@@ -68,6 +71,9 @@ class AnotherApproach{
                 min_id++;
             }
         }
+
+        System.out.println(Arrays.toString(arr));
+
         for (int i=0;i<l;i++){
             arr[i]=arr[i]/max_ele;
         }
@@ -85,3 +91,10 @@ class AnotherApproach{
         aa.rearrange(arr,arr.length);
     }
 }
+class test{
+    public static void main(String[] args) {
+        System.out.println(7%8);
+    }
+}
+
+
