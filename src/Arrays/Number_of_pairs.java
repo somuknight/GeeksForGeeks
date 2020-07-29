@@ -52,3 +52,31 @@ public class Number_of_pairs {
         System.out.println(ans);
     }
 }
+// TODO: 29-Jul-20 RECTIFY THE ABOVE PROGRAM
+/****************************this approach's time complexity will be O(n^2)*****************/
+/*******************************************************************************************/
+class AnotherApproach_to_Number_of_pairs{
+    public static int countPairs(int[] x,int[] y){
+        int count=0;
+        for (int i=0;i<x.length;i++){
+            for(int j=0;j<y.length;j++){
+                int a=x[i];
+                int b=y[j];
+                if(Math.pow(a,b)>Math.pow(b,a))
+                    count++;
+            }
+        }
+
+        return count;
+    }
+    public static void main(String[] args) {
+       int[] X={2,1,6};
+       int[] Y={1,5};
+
+       int ans=countPairs(X,Y);
+       if (ans>0)
+           System.out.println(ans);
+       else
+           System.out.println("no pairs found");
+    }
+}
