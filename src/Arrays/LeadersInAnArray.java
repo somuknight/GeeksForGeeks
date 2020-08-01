@@ -80,7 +80,7 @@ class AnotherApproach_LeadersInAnArray{
                 }
             }
 
-            if (flag==true)
+            if (flag)
                 System.out.print(arr[i]+" ");
 
         }
