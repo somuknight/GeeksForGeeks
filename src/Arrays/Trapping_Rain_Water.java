@@ -102,8 +102,7 @@ class Trapping_Rain_Water_Another_Approach{
     }
     public static void main(String[] args) {
         int[] arr={3,0,0,4,2,4};
-        Trapping_Rain_Water_Another_Approach aa=new Trapping_Rain_Water_Another_Approach();
-        int ans=aa.waterAmount(arr,arr.length);
+        int ans= waterAmount(arr,arr.length);
         System.out.println(ans);
     }
 }
