@@ -40,6 +40,8 @@ So, total unit of water trapped is 10 units.
 /**********************************BELOW👇🏼👇🏼👇🏼  method cost O(n) in time and in space each***********************************/
 package Arrays;
 
+import java.util.Scanner;
+
 public class Trapping_Rain_Water {
     private static int  waterAmount(int[] arr){
         int res=0;
@@ -101,8 +103,18 @@ class Trapping_Rain_Water_Another_Approach{
         return res;
     }
     public static void main(String[] args) {
-        int[] arr={3,0,0,4,2,4};
-        int ans= waterAmount(arr,arr.length);
-        System.out.println(ans);
+//        int[] arr={3,0,0,4,2,4};
+        Scanner sc=new Scanner(System.in);
+        int T=sc.nextInt();
+        for(int i=0;i<T;i++) {
+            int size=sc.nextInt();
+            int[] arr=new int[size];
+            for (int j=0;j<size;j++) {
+                arr[j] = sc.nextInt();
+            }
+                int ans = waterAmount(arr, arr.length);
+                System.out.println(ans);    //8 8 2 4 5 5 1
+
+        }
     }
 }
