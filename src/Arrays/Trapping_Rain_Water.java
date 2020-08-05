@@ -72,16 +72,38 @@ public class Trapping_Rain_Water {
 }
 /**********************************BELOW👇🏼👇🏼👇🏼  method cost O(n) in time and O(1)in space***********************************/
 class Trapping_Rain_Water_Another_Approach{
-    private static int waterAmount(int[] arr){
+    private static int waterAmount(int[] arr,int l){
         int res=0;
+        int left_max=0,right_max=0;
+        int lo=0,hi=l-1;
+
+        while (lo<=hi){
+            if(arr[lo]< arr[hi]) {
+                if (arr[lo] > left_max) {
+                    left_max = arr[lo];
+                }
+                else
+                    res=res+left_max-arr[lo];
+
+                lo++;
+            }
+            else {
+                if (arr[hi]>right_max)
+                    right_max=arr[hi];
+                else
+                    res=res+right_max-arr[hi];
+
+                hi--;
+            }
+        }
 
 
         return res;
     }
     public static void main(String[] args) {
-        int[] arr={3,0,0,4,0,4,0,3};
+        int[] arr={3,0,0,4,2,4};
         Trapping_Rain_Water_Another_Approach aa=new Trapping_Rain_Water_Another_Approach();
-        int ans=aa.waterAmount(arr);
+        int ans=aa.waterAmount(arr,arr.length);
         System.out.println(ans);
     }
 }
