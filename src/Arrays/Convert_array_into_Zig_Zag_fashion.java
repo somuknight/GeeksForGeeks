@@ -36,6 +36,9 @@ Output:
 package Arrays;
 
 import java.util.Arrays;
+import java.util.Scanner;
+
+
 
 public class Convert_array_into_Zig_Zag_fashion {
     private static int[] zigzag(int[] arr,int l){
@@ -69,8 +72,22 @@ public class Convert_array_into_Zig_Zag_fashion {
         return arr;
     }
     public static void main(String[] args) {
-        int[] arr={1,4,3,2};
-        arr=zigzag(arr,arr.length).clone();
-        System.out.println(Arrays.toString(arr));
+//        int[] arr={1,4,3,2};
+        Scanner sc=new Scanner(System.in);
+        int T= sc.nextInt();
+        for (int i=0;i<T;i++) {
+            int size=sc.nextInt();
+            int[] arr=new int[size];
+            for (int j=0;j<size;j++){
+                arr[j]= sc.nextInt();
+            }
+            arr = zigzag(arr, arr.length).clone();
+            System.out.println(Arrays.toString(arr));
+            System.out.println(Arrays.copyOfRange(arr,0,arr.length));
+            for (int k : arr) {
+                System.out.print(k + " ");
+            }
+            System.out.println("");
+        }
     }
 }
