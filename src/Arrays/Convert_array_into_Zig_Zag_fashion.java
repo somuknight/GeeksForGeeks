@@ -83,7 +83,7 @@ public class Convert_array_into_Zig_Zag_fashion {
             }
             arr = zigzag(arr, arr.length).clone();
             System.out.println(Arrays.toString(arr));
-            System.out.println(Arrays.copyOfRange(arr,0,arr.length));
+            System.out.println(Arrays.toString(Arrays.copyOfRange(arr, 0, arr.length)));
             for (int k : arr) {
                 System.out.print(k + " ");
             }
